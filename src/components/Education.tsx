@@ -33,25 +33,25 @@ export const Education = () => {
   return (
     <section id="education" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
+        <div className="text-center mb-16 animate-fade-in-down">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent hover:scale-105 transition-smooth cursor-default inline-block">
             Education
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-accent to-primary mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-gradient-to-r from-accent to-primary mx-auto rounded-full animate-scale-in" />
         </div>
 
         <div className="space-y-6 max-w-4xl mx-auto">
           {education.map((edu, index) => (
             <Card 
               key={index}
-              className="p-6 md:p-8 shadow-medium hover:shadow-large transition-smooth border-l-4 border-l-accent group animate-fade-in-up"
+              className="p-6 md:p-8 shadow-medium hover:shadow-large transition-smooth border-l-4 border-l-accent group animate-slide-in-right hover:scale-[1.02] cursor-pointer"
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="flex flex-col md:flex-row gap-6">
                 {/* Icon */}
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-accent/20 to-primary/20 group-hover:from-accent/30 group-hover:to-primary/30 transition-smooth flex items-center justify-center">
-                    <GraduationCap className="w-8 h-8 text-accent" />
+                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-accent/20 to-primary/20 group-hover:from-accent/30 group-hover:to-primary/30 transition-smooth flex items-center justify-center group-hover:rotate-12 group-hover:scale-110 animate-float-slow">
+                    <GraduationCap className="w-8 h-8 text-primary group-hover:animate-bounce-in" />
                   </div>
                 </div>
 
@@ -59,23 +59,23 @@ export const Education = () => {
                 <div className="flex-grow space-y-2">
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2">
                     <div>
-                      <h3 className="text-xl font-bold text-foreground group-hover:text-accent transition-smooth">
+                      <h3 className="text-xl font-bold text-black group-hover:text-primary transition-smooth group-hover:translate-x-2">
                         {edu.degree}
                       </h3>
-                      <p className="text-lg font-medium text-accent/90">
+                      <p className="text-sm font-medium text-black group-hover:scale-105 transition-smooth inline-block">
                         {edu.institution}
                       </p>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-muted-foreground group-hover:text-foreground/70 transition-smooth">
                         {edu.location}
                       </p>
                     </div>
                     <div className="flex flex-col md:items-end gap-2">
-                      <Badge variant="secondary" className="w-fit">
+                      <Badge variant="secondary" className="w-fit hover:scale-110 transition-smooth bg-secondary hover:bg-secondary/90 text-secondary-foreground">
                         {edu.year}
                       </Badge>
                       <Badge 
                         variant={edu.scoreType === "excellent" ? "default" : "outline"}
-                        className={edu.scoreType === "excellent" ? "bg-accent hover:bg-accent/90" : "border-accent/50"}
+                        className={`${edu.scoreType === "excellent" ? "bg-accent hover:bg-accent/90 text-accent-foreground" : "border-accent text-accent"} hover:scale-110 transition-smooth animate-pulse-glow`}
                       >
                         {edu.score}
                       </Badge>
