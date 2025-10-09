@@ -27,10 +27,10 @@ export const Achievements = () => {
     <section id="achievements" className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in-down">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:scale-105 transition-smooth cursor-default inline-block">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-primary to-accent bg-clip-text text-transparent hover:scale-105 transition-smooth cursor-default inline-block">
             Achievements & Recognition
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full animate-scale-in" />
+          <div className="w-20 h-1 bg-accent mx-auto rounded-full animate-scale-in" />
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
@@ -41,12 +41,12 @@ export const Achievements = () => {
               style={{ animationDelay: `${index * 150}ms` }}
             >
               {/* Icon */}
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 group-hover:from-primary/30 group-hover:to-accent/30 transition-smooth flex items-center justify-center mx-auto mb-4 group-hover:animate-bounce-in animate-float-slow">
+              <div className="w-16 h-16 rounded-full bg-primary/10 group-hover:from-primary/30 group-hover:to-accent/30 transition-smooth flex items-center justify-center mx-auto mb-4 group-hover:animate-bounce-in animate-float-slow">
                 <achievement.icon className="w-8 h-8 text-primary group-hover:scale-125 transition-smooth" />
               </div>
 
               {/* Content */}
-              <h3 className={`text-lg font-bold mb-3 bg-gradient-to-r ${achievement.color} bg-clip-text text-transparent bg-[length:200%_auto] group-hover:animate-gradient-shift`}>
+              <h3 className={`text-lg font-bold mb-3 text-primary group-hover:animate-gradient-shift`}>
                 {achievement.title}
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground/80 transition-smooth">

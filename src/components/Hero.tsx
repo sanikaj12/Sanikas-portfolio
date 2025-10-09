@@ -51,7 +51,7 @@ export const Hero = () => {
               </div>
           
               {/* Name */}
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-fade-in-up bg-[length:200%_auto] animate-gradient-shift" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold bg-primary via-accent to-primary bg-clip-text text-transparent animate-fade-in-up bg-[length:200%_auto] animate-gradient-shift" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
                 Sanika Shrikant Joshi
               </h1>
               

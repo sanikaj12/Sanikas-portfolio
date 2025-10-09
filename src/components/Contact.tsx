@@ -16,10 +16,10 @@ export const Contact = () => {
       <div className="container mx-auto max-w-8xl">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in-down">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-primary to-accent bg-clip-text text-transparent">
             Get In Touch
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-8 animate-scale-in" />
+          <div className="w-20 h-1 bg-accent mx-auto rounded-full mb-8 animate-scale-in" />
         </div>
 
         {/* Two Column Layout */}
@@ -92,7 +92,7 @@ export const Contact = () => {
             <div className="border-t pt-6">
               <h4 className="font-semibold text-foreground mb-3">Current Status</h4>
               <div className="flex items-center gap-3">
-                <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
+                <div className="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
                 <span className="text-muted-foreground">Currently employed as Frontend Developer at HATS, shstratva Technologies Pvt Ltd.</span>
               </div>
             </div>
@@ -174,7 +174,7 @@ export const Contact = () => {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 shadow-medium hover:shadow-large transition-smooth hover:scale-[1.02] group"
+                className="w-full bg-primary to-accent hover:from-primary/90 hover:to-accent/90 shadow-medium hover:shadow-large transition-smooth hover:scale-[1.02] group"
               >
                 Send Message
                 <Send className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-smooth" />

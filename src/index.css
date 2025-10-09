@@ -8,7 +8,64 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Modern Tech Dark Mode Theme */
+    /* Modern Tech Light Mode Theme */
+    --background: 0 0% 100%; /* Pure White #FFFFFF */
+    --foreground: 220 25% 6%; /* Deep Blue Black #0B1120 */
+
+    --card: 0 0% 98%; /* Light Gray #FAFAFA */
+    --card-foreground: 220 25% 6%;
+
+    --popover: 0 0% 98%;
+    --popover-foreground: 220 25% 6%;
+
+    --primary: 195 94% 60%; /* Sky Blue #38BDF8 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 25% 96%; /* Very Light Blue Gray */
+    --secondary-foreground: 220 25% 6%;
+
+    --muted: 220 25% 96%;
+    --muted-foreground: 220 25% 45%;
+
+    --accent: 48 96% 53%; /* Amber Yellow #FACC15 */
+    --accent-foreground: 220 25% 6%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 25% 90%;
+    --input: 220 25% 90%;
+    --ring: 195 94% 60%;
+
+    --radius: 1rem;
+    
+    /* Modern Tech Light Theme gradient tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(195 94% 60%) 0%, hsl(195 94% 50%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(220 25% 96%) 0%, hsl(220 25% 90%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(48 96% 53%) 0%, hsl(48 96% 45%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(220 25% 98%) 50%, hsl(220 25% 96%) 100%);
+    
+    /* Modern Tech Light Theme shadow tokens */
+    --shadow-soft: 0 2px 8px -2px hsl(220 25% 6% / 0.08);
+    --shadow-medium: 0 4px 16px -4px hsl(220 25% 6% / 0.12);
+    --shadow-large: 0 8px 32px -8px hsl(220 25% 6% / 0.18);
+    
+    /* Animation tokens */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 220 25% 6%;
+    --sidebar-primary: 195 94% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 25% 96%;
+    --sidebar-accent-foreground: 220 25% 6%;
+    --sidebar-border: 220 25% 90%;
+    --sidebar-ring: 195 94% 60%;
+  }
+
+  .dark {
+    /* Dark mode theme */
     --background: 220 25% 6%; /* Deep Blue Black #0B1120 */
     --foreground: 213 31% 91%; /* Light Gray #E2E8F0 */
 
@@ -30,29 +87,17 @@ All colors MUST be HSL.
     --accent: 48 96% 53%; /* Amber Yellow #FACC15 */
     --accent-foreground: 215 28% 17%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
-
     --border: 215 28% 25%;
     --input: 215 28% 25%;
-    --ring: 195 94% 60%;
 
-    --radius: 1rem;
-    
-    /* Modern Tech gradient tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(195 94% 60%) 0%, hsl(195 94% 50%) 100%);
+    /* Dark mode gradients */
     --gradient-secondary: linear-gradient(135deg, hsl(215 28% 17%) 0%, hsl(220 25% 12%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(48 96% 53%) 0%, hsl(48 96% 45%) 100%);
     --gradient-hero: linear-gradient(135deg, hsl(220 25% 6%) 0%, hsl(215 28% 10%) 50%, hsl(215 28% 17%) 100%);
     
-    /* Modern Tech shadow tokens */
+    /* Dark mode shadows */
     --shadow-soft: 0 4px 20px -2px hsl(195 94% 60% / 0.15);
     --shadow-medium: 0 8px 30px -4px hsl(195 94% 60% / 0.25);
     --shadow-large: 0 20px 60px -10px hsl(195 94% 60% / 0.35);
-    
-    /* Animation tokens */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 215 28% 17%;
     --sidebar-foreground: 213 31% 91%;
@@ -62,12 +107,6 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 213 31% 91%;
     --sidebar-border: 215 28% 25%;
     --sidebar-ring: 195 94% 60%;
-  }
-
-  .dark {
-    /* Dark mode uses the same colors as light mode for this theme */
-    --background: 220 25% 6%;
-    --foreground: 213 31% 91%;
   }
 }
 
@@ -130,21 +169,34 @@ All colors MUST be HSL.
     scroll-behavior: smooth;
   }
   
-  /* Custom scrollbar styling */
+  /* Custom scrollbar styling for light theme */
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
   }
   
   ::-webkit-scrollbar-track {
-    background: hsl(215 28% 12%);
+    background: hsl(220 25% 96%);
   }
   
   ::-webkit-scrollbar-thumb {
-    background: hsl(195 94% 60%);
-    border-radius: 5px;
+    background: hsl(220 25% 80%);
+    border-radius: 4px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
+    background: hsl(220 25% 70%);
+  }
+
+  /* Dark mode scrollbar */
+  .dark ::-webkit-scrollbar-track {
+    background: hsl(215 28% 12%);
+  }
+  
+  .dark ::-webkit-scrollbar-thumb {
+    background: hsl(195 94% 60%);
+  }
+  
+  .dark ::-webkit-scrollbar-thumb:hover {
     background: hsl(195 94% 50%);
   }
 }

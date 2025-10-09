@@ -34,23 +34,23 @@ export const Education = () => {
     <section id="education" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in-down">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:scale-105 transition-smooth cursor-default inline-block">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-primary to-accent bg-clip-text text-transparent hover:scale-105 transition-smooth cursor-default inline-block">
             Education
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full animate-scale-in" />
+          <div className="w-20 h-1 bg-accent mx-auto rounded-full animate-scale-in" />
         </div>
 
         <div className="space-y-6 max-w-6xl mx-auto">
           {education.map((edu, index) => (
             <Card 
               key={index}
-              className="p-6 md:p-8 shadow-medium hover:shadow-large transition-smooth border-l-4 border-l-accent group animate-slide-in-right hover:scale-[1.02] cursor-pointer"
+              className="p-6 md:p-8 shadow-medium hover:shadow-large transition-smooth border-l-4 border-l-primary group animate-slide-in-right hover:scale-[1.02] cursor-pointer"
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="flex flex-col md:flex-row gap-6">
                 {/* Icon */}
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-accent/20 to-primary/20 group-hover:from-accent/30 group-hover:to-primary/30 transition-smooth flex items-center justify-center group-hover:rotate-12 group-hover:scale-110 animate-float-slow">
+                  <div className="w-16 h-16 rounded-xl bg-primary/10 group-hover:from-accent/30 group-hover:to-primary/30 transition-smooth flex items-center justify-center group-hover:rotate-12 group-hover:scale-110 animate-float-slow">
                     <GraduationCap className="w-8 h-8 text-primary group-hover:animate-bounce-in" />
                   </div>
                 </div>
@@ -75,7 +75,7 @@ export const Education = () => {
                       </Badge>
                       <Badge 
                         variant={edu.scoreType === "excellent" ? "default" : "outline"}
-                        className={`${edu.scoreType === "excellent" ? "bg-accent hover:bg-accent/90 text-accent-foreground" : "border-accent text-accent"} hover:scale-110 transition-smooth`}
+                        className={`${edu.scoreType === "excellent" ? "bg-primary hover:bg-primary/90 text-primary-foreground" : "border-primary text-primary"} hover:scale-110 transition-smooth`}
                       >
                         {edu.score}
                       </Badge>

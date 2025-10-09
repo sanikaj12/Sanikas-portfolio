@@ -39,10 +39,10 @@ export const Skills = () => {
     <section id="skills" className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in-down">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent hover:scale-105 transition-smooth cursor-default inline-block">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-primary via-accent to-primary bg-clip-text text-transparent hover:scale-105 transition-smooth cursor-default inline-block">
             Skills & Expertise
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary via-accent to-primary mx-auto rounded-full animate-scale-in" />
+          <div className="w-20 h-1 bg-accent mx-auto rounded-full animate-scale-in" />
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -52,7 +52,7 @@ export const Skills = () => {
               className="p-6 shadow-soft hover:shadow-large transition-smooth border-2 hover:border-primary/30 animate-rotate-in hover:scale-[1.02] group cursor-pointer"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <h3 className={`text-xl font-bold mb-4 bg-gradient-to-r ${category.color} bg-clip-text text-transparent group-hover:scale-105 transition-smooth inline-block`}>
+              <h3 className={`text-xl font-bold mb-4 text-primary group-hover:scale-105 transition-smooth inline-block`}>
                 {category.category}
               </h3>
               <div className="flex flex-wrap gap-2">

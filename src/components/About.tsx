@@ -24,10 +24,10 @@ export const About = () => {
     <section id="about" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in-down">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:scale-105 transition-smooth cursor-default inline-block">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-primary to-accent bg-clip-text text-transparent hover:scale-105 transition-smooth cursor-default inline-block">
             About Me
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full animate-scale-in" />
+          <div className="w-20 h-1 bg-accent mx-auto rounded-full animate-scale-in" />
         </div>
 
         <div className="max-w-6xl mx-auto">
@@ -61,7 +61,7 @@ export const About = () => {
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <div className="flex flex-col items-center gap-4">
-                  <div className="p-3 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 group-hover:from-primary/30 group-hover:to-accent/30 transition-smooth group-hover:scale-110 group-hover:rotate-6">
+                  <div className="p-3 rounded-lg bg-primary/10 group-hover:from-primary/30 group-hover:to-accent/30 transition-smooth group-hover:scale-110 group-hover:rotate-6">
                     <item.icon className="w-6 h-6 text-primary group-hover:animate-pulse-soft" />
                   </div>
                   <div>
