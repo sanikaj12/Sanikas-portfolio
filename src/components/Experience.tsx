@@ -6,21 +6,24 @@ export const Experience = () => {
   const experiences = [
     {
       icon: Briefcase,
-      role: "Software Development Engineer Intern",
-      company: "SHSTRA",
+      role: "Frontend Developer",
+      company: "HATS, shstratva Technologies Pvt Ltd.",
       location: "Pune",
       period: "Present",
-      description: "Contributing to technical projects as a Software Developer, responsible for developing front-end applications using React.js",
-      skills: ["React.js", "Frontend Development", "Team Collaboration"]
-    },
-    {
-      icon: Users,
-      role: "Team Member - Documentation Team",
-      company: "Team ACSES",
-      location: "Kolhapur",
-      period: "Present",
-      description: "Working as an advisor in the Documentation Team, contributing to project documentation and knowledge sharing",
-      skills: ["Technical Writing", "Team Leadership", "Documentation"]
+      description: "Developing and maintaining user interfaces for web applications including HATS platform (hats.shstra.in) and SHSTRA main website (shstra.in). Responsible for creating responsive, modern UI components using React.js and ensuring optimal user experience across different devices and browsers.",
+      projects: [
+        {
+          name: "HATS Platform",
+          url: "https://hats.shstra.in/",
+          description: "Developed comprehensive UI for the HATS platform"
+        },
+        {
+          name: "SHSTRA Website", 
+          url: "https://shstra.in/",
+          description: "Created and maintained the main SHSTRA company website"
+        }
+      ],
+      skills: ["React.js", "Frontend Development", "UI/UX Design", "Responsive Design", "Team Collaboration", "Modern Web Technologies"]
     }
   ];
 
@@ -34,7 +37,7 @@ export const Experience = () => {
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full animate-scale-in" />
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-10">
           {experiences.map((exp, index) => (
             <Card 
               key={index}
@@ -71,6 +74,31 @@ export const Experience = () => {
                   <p className="text-foreground/80 leading-relaxed group-hover:text-foreground transition-smooth">
                     {exp.description}
                   </p>
+
+                  {/* Projects */}
+                  {exp.projects && (
+                    <div className="space-y-3 pt-3">
+                      <h4 className="text-sm font-semibold text-foreground/90">Key Projects:</h4>
+                      <div className="space-y-2">
+                        {exp.projects.map((project, projIdx) => (
+                          <div key={projIdx} className="flex items-center gap-3 p-3 rounded-lg bg-primary/5 hover:bg-primary/10 transition-smooth group/project">
+                            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                            <div className="flex-grow">
+                              <a 
+                                href={project.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="font-medium text-primary hover:text-accent transition-smooth group-hover/project:underline"
+                              >
+                                {project.name}
+                              </a>
+                              <p className="text-xs text-muted-foreground mt-1">{project.description}</p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
 
                   <div className="flex flex-wrap gap-2 pt-2">
                     {exp.skills.map((skill, idx) => (

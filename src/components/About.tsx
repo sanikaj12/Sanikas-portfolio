@@ -24,10 +24,10 @@ export const About = () => {
     <section id="about" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in-down">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent hover:scale-105 transition-smooth cursor-default inline-block">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:scale-105 transition-smooth cursor-default inline-block">
             About Me
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full animate-scale-in" />
+          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full animate-scale-in" />
         </div>
 
         <div className="max-w-6xl mx-auto">
@@ -35,7 +35,7 @@ export const About = () => {
           <div className="space-y-6 mb-12 animate-fade-in-up">
             <p className="text-lg text-foreground/90 leading-relaxed hover:scale-[1.02] transition-smooth text-center">
               I'm a <span className="font-semibold text-primary hover:text-primary/80 transition-smooth cursor-default">Computer Science Engineering graduate</span> with a CGPA of 8.64. Currently working as a 
-              <span className="font-semibold text-secondary hover:text-secondary/80 transition-smooth cursor-default"> Software Developer at HATS, Shastratva Technologies Pvt Ltd.</span>, 
+              <span className="font-semibold text-accent hover:text-accent/80 transition-smooth cursor-default"> Software Developer at HATS, Shastratva Technologies Pvt Ltd.</span>, 
               where I contribute to technical projects developing front-end applications using React.js.
             </p>
             
@@ -61,7 +61,7 @@ export const About = () => {
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <div className="flex flex-col items-center gap-4">
-                  <div className="p-3 rounded-lg bg-gradient-to-br from-primary/20 to-secondary/20 group-hover:from-primary/30 group-hover:to-secondary/30 transition-smooth group-hover:scale-110 group-hover:rotate-6">
+                  <div className="p-3 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 group-hover:from-primary/30 group-hover:to-accent/30 transition-smooth group-hover:scale-110 group-hover:rotate-6">
                     <item.icon className="w-6 h-6 text-primary group-hover:animate-pulse-soft" />
                   </div>
                   <div>

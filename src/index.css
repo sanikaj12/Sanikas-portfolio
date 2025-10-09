@@ -8,73 +8,66 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 280 30% 98%;
-    --foreground: 260 20% 20%;
+    /* Modern Tech Dark Mode Theme */
+    --background: 220 25% 6%; /* Deep Blue Black #0B1120 */
+    --foreground: 213 31% 91%; /* Light Gray #E2E8F0 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 260 20% 20%;
+    --card: 215 28% 17%; /* Navy Blue #0F172A */
+    --card-foreground: 213 31% 91%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 260 20% 20%;
+    --popover: 215 28% 17%;
+    --popover-foreground: 213 31% 91%;
 
-    --primary: 265 60% 65%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 195 94% 60%; /* Sky Blue #38BDF8 */
+    --primary-foreground: 215 28% 17%;
 
-    --secondary: 330 60% 85%;
-    --secondary-foreground: 260 20% 20%;
+    --secondary: 215 28% 17%; /* Navy Blue */
+    --secondary-foreground: 213 31% 91%;
 
-    --muted: 270 30% 95%;
-    --muted-foreground: 260 15% 45%;
+    --muted: 215 28% 12%;
+    --muted-foreground: 213 31% 70%;
 
-    --accent: 160 50% 75%;
-    --accent-foreground: 260 20% 20%;
+    --accent: 48 96% 53%; /* Amber Yellow #FACC15 */
+    --accent-foreground: 215 28% 17%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 270 25% 90%;
-    --input: 270 25% 90%;
-    --ring: 265 60% 65%;
+    --border: 215 28% 25%;
+    --input: 215 28% 25%;
+    --ring: 195 94% 60%;
 
     --radius: 1rem;
     
-    /* Custom gradient tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(265 60% 65%) 0%, hsl(280 55% 75%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(330 60% 85%) 0%, hsl(300 50% 90%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(160 50% 75%) 0%, hsl(180 45% 80%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(280 30% 98%) 0%, hsl(270 40% 96%) 50%, hsl(330 40% 96%) 100%);
+    /* Modern Tech gradient tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(195 94% 60%) 0%, hsl(195 94% 50%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(215 28% 17%) 0%, hsl(220 25% 12%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(48 96% 53%) 0%, hsl(48 96% 45%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(220 25% 6%) 0%, hsl(215 28% 10%) 50%, hsl(215 28% 17%) 100%);
     
-    /* Shadow tokens */
-    --shadow-soft: 0 4px 20px -2px hsl(265 60% 65% / 0.15);
-    --shadow-medium: 0 8px 30px -4px hsl(265 60% 65% / 0.2);
-    --shadow-large: 0 20px 60px -10px hsl(265 60% 65% / 0.25);
+    /* Modern Tech shadow tokens */
+    --shadow-soft: 0 4px 20px -2px hsl(195 94% 60% / 0.15);
+    --shadow-medium: 0 8px 30px -4px hsl(195 94% 60% / 0.25);
+    --shadow-large: 0 20px 60px -10px hsl(195 94% 60% / 0.35);
     
     /* Animation tokens */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --radius: 1rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 215 28% 17%;
+    --sidebar-foreground: 213 31% 91%;
+    --sidebar-primary: 195 94% 60%;
+    --sidebar-primary-foreground: 215 28% 17%;
+    --sidebar-accent: 215 28% 12%;
+    --sidebar-accent-foreground: 213 31% 91%;
+    --sidebar-border: 215 28% 25%;
+    --sidebar-ring: 195 94% 60%;
   }
 
   .dark {
-    --background: 260 30% 10%;
-    --foreground: 280 20% 95%;
+    /* Dark mode uses the same colors as light mode for this theme */
+    --background: 220 25% 6%;
+    --foreground: 213 31% 91%;
   }
 }
 
@@ -143,15 +136,15 @@ All colors MUST be HSL.
   }
   
   ::-webkit-scrollbar-track {
-    background: hsl(var(--muted));
+    background: hsl(215 28% 12%);
   }
   
   ::-webkit-scrollbar-thumb {
-    background: hsl(var(--primary));
+    background: hsl(195 94% 60%);
     border-radius: 5px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: hsl(var(--primary) / 0.8);
+    background: hsl(195 94% 50%);
   }
 }

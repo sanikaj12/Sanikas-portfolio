@@ -36,10 +36,10 @@ export const Projects = () => {
     <section id="projects" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in-down">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent hover:scale-105 transition-smooth cursor-default inline-block">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:scale-105 transition-smooth cursor-default inline-block">
             Featured Projects
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-secondary to-accent mx-auto rounded-full animate-scale-in" />
+          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full animate-scale-in" />
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
@@ -51,7 +51,7 @@ export const Projects = () => {
             >
               <CardHeader>
                 {/* Icon with gradient background */}
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-secondary/20 group-hover:from-primary/30 group-hover:to-secondary/30 transition-smooth flex items-center justify-center mb-4 group-hover:animate-wiggle group-hover:scale-110">
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 group-hover:from-primary/30 group-hover:to-accent/30 transition-smooth flex items-center justify-center mb-4 group-hover:animate-wiggle group-hover:scale-110">
                   <project.icon className="w-7 h-7 text-primary group-hover:drop-shadow-lg" />
                 </div>
                 

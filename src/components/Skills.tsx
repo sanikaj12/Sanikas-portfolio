@@ -11,22 +11,22 @@ export const Skills = () => {
     {
       category: "Frameworks & Libraries",
       skills: ["React.js", "Flutter", "Flask", "Tkinter"],
-      color: "from-secondary to-secondary/80"
+      color: "from-accent to-accent/80"
     },
     {
       category: "Machine Learning",
       skills: ["SVM", "Decision Tree", "KNN", "Naive Bayes", "YOLO", "Computer Vision", "Image Processing"],
-      color: "from-accent to-accent/80"
+      color: "from-primary to-accent"
     },
     {
       category: "Databases",
       skills: ["PostgreSQL", "MySQL"],
-      color: "from-primary to-secondary"
+      color: "from-accent to-primary"
     },
     {
       category: "Tools & Technologies",
       skills: ["VS Code", "Jupyter Notebook", "Git", "Arduino", "Blender", "Canva", "MS Office", "Postman"],
-      color: "from-secondary to-accent"
+      color: "from-primary to-accent"
     },
     {
       category: "Soft Skills",
@@ -39,10 +39,10 @@ export const Skills = () => {
     <section id="skills" className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in-down">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent hover:scale-105 transition-smooth cursor-default inline-block">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent hover:scale-105 transition-smooth cursor-default inline-block">
             Skills & Expertise
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto rounded-full animate-scale-in" />
+          <div className="w-20 h-1 bg-gradient-to-r from-primary via-accent to-primary mx-auto rounded-full animate-scale-in" />
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">

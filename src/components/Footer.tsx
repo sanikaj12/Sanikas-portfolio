@@ -9,8 +9,8 @@ export const Footer = () => {
         <div className="text-center space-y-4">
           {/* Brand */}
           <div className="space-y-2 animate-fade-in">
-            <h3 className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent bg-[length:200%_auto] hover:animate-gradient-shift cursor-default hover:scale-105 transition-smooth inline-block">
-              Sanika Joshi
+            <h3 className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent bg-[length:200%_auto] hover:animate-gradient-shift cursor-default hover:scale-105 transition-smooth inline-block">
+              Sanika Shrikant Joshi
             </h3>
             <p className="text-sm text-muted-foreground hover:text-foreground/80 transition-smooth">
               Software Developer & Computer Science Engineer

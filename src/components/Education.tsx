@@ -34,10 +34,10 @@ export const Education = () => {
     <section id="education" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in-down">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent hover:scale-105 transition-smooth cursor-default inline-block">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:scale-105 transition-smooth cursor-default inline-block">
             Education
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-accent to-primary mx-auto rounded-full animate-scale-in" />
+          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full animate-scale-in" />
         </div>
 
         <div className="space-y-6 max-w-4xl mx-auto">
@@ -59,13 +59,13 @@ export const Education = () => {
                 <div className="flex-grow space-y-2">
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2">
                     <div>
-                      <h3 className="text-xl font-bold text-black group-hover:text-primary transition-smooth group-hover:translate-x-2">
+                      <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-smooth group-hover:translate-x-2">
                         {edu.degree}
                       </h3>
-                      <p className="text-sm font-medium text-black group-hover:scale-105 transition-smooth inline-block">
+                      <p className="text-sm font-medium text-muted-foreground group-hover:scale-105 transition-smooth inline-block">
                         {edu.institution}
                       </p>
-                      <p className="text-sm text-muted-foreground group-hover:text-foreground/70 transition-smooth">
+                      <p className="text-sm text-foreground group-hover:text-foreground/70 transition-smooth">
                         {edu.location}
                       </p>
                     </div>
@@ -75,7 +75,7 @@ export const Education = () => {
                       </Badge>
                       <Badge 
                         variant={edu.scoreType === "excellent" ? "default" : "outline"}
-                        className={`${edu.scoreType === "excellent" ? "bg-accent hover:bg-accent/90 text-accent-foreground" : "border-accent text-accent"} hover:scale-110 transition-smooth animate-pulse-glow`}
+                        className={`${edu.scoreType === "excellent" ? "bg-accent hover:bg-accent/90 text-accent-foreground" : "border-accent text-accent"} hover:scale-110 transition-smooth`}
                       >
                         {edu.score}
                       </Badge>
