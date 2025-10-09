@@ -40,7 +40,7 @@ export const Education = () => {
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full animate-scale-in" />
         </div>
 
-        <div className="space-y-6 max-w-4xl mx-auto">
+        <div className="space-y-6 max-w-6xl mx-auto">
           {education.map((edu, index) => (
             <Card 
               key={index}
