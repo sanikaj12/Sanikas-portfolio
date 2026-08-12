@@ -115,7 +115,7 @@ export const Projects = () => {
     {
       icon: Receipt,
       category: "professional",
-      title: "SmartInvoice Hub",
+      title: "Smart Invoice Hub",
       meta: "Billing & Inventory Web Application",
       role: "Frontend Developer",
       description: "A business-focused billing and inventory platform for managing customers, products, categories, brands, invoices, payments, and inventory operations.",
