@@ -57,13 +57,12 @@ export const Hero = () => {
               
               {/* Title */}
               <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-foreground/90 animate-fade-in-up" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
-                Software Developer & Computer Science Engineer
+                Frontend Developer building modern, scalable web applications.
               </p>
               
               {/* Description */}
               <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.8s', animationFillMode: 'both' }}>
-                B.Tech graduate passionate about creating innovative solutions through 
-                full-stack development, machine learning, and mobile applications.
+                Frontend Developer with 1+ year of professional experience building ERP and business applications using React.js, TypeScript, JavaScript, Tailwind CSS, and REST APIs.
               </p>
               
               {/* CTA Buttons */}

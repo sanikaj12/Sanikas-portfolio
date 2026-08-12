@@ -9,12 +9,12 @@ export const Experience = () => {
       role: "Frontend Developer",
       company: "HATS, shstratva Technologies Pvt Ltd.",
       location: "Pune",
-      period: "Present",
-      description: "Developing and maintaining user interfaces for web applications including HATS platform (hats.shstra.in) and SHSTRA main website (shstra.in). Responsible for creating responsive, modern UI components using React.js and ensuring optimal user experience across different devices and browsers.",
+      period: "July 2025 — Present",
+      description: "Developing and maintaining user interfaces for web applications including HATS platform (https://hatsplatform.com) and SHSTRA main website (shstra.in). Responsible for creating responsive, modern UI components using React.js and ensuring optimal user experience across different devices and browsers.",
       projects: [
         {
           name: "HATS Platform",
-          url: "https://hats.shstra.in/",
+          url: "https://hatsplatform.com",
           description: "Developed comprehensive UI for the HATS platform"
         },
         {

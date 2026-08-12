@@ -1,22 +1,22 @@
-import { Code2, Sparkles, Trophy } from "lucide-react";
+import { Code2, Database, SquareTerminal } from "lucide-react";
 import { Card } from "./ui/card";
 
 export const About = () => {
   const highlights = [
     {
       icon: Code2,
-      title: "Full-Stack Developer",
-      description: "Experienced in React.js, Flutter, and modern web technologies"
+      title: "Frontend Developer",
+      description: "React.js · JavaScript · TypeScript · HTML · CSS · Tailwind CSS"
     },
     {
-      icon: Sparkles,
-      title: "Machine Learning",
-      description: "Applied ML algorithms in real-world projects and research"
+      icon: Database,
+      title: "API & Data",
+      description: "REST APIs · Axios · MySQL"
     },
     {
-      icon: Trophy,
-      title: "Problem Solver",
-      description: "Top 20 finish in KIT AVINYA Hackathon & deployed projects"
+      icon: SquareTerminal,
+      title: "Development Tools",
+      description: "Git · GitHub · VS Code · Postman · Bruno · Cursor · Trae"
     }
   ];
 
@@ -34,21 +34,17 @@ export const About = () => {
           {/* Description */}
           <div className="space-y-6 mb-12 animate-fade-in-up">
             <p className="text-lg text-foreground/90 leading-relaxed hover:scale-[1.02] transition-smooth text-center">
-              I'm a <span className="font-semibold text-primary hover:text-primary/80 transition-smooth cursor-default">Computer Science Engineering graduate</span> with a CGPA of 8.64. Currently working as a 
+              I'm a <span className="font-semibold text-primary hover:text-primary/80 transition-smooth cursor-default">Frontend Developer</span> with 1+ year of professional experience building ERP and business applications using React.js, TypeScript, JavaScript, Tailwind CSS, and REST APIs. Currently working as a 
               <span className="font-semibold text-accent hover:text-accent/80 transition-smooth cursor-default"> Software Developer at HATS, Shastratva Technologies Pvt Ltd.</span>, 
               where I contribute to technical projects developing front-end applications using React.js.
             </p>
             
             <p className="text-lg text-foreground/90 leading-relaxed hover:scale-[1.02] transition-smooth text-center">
-              My passion lies in creating <span className="font-semibold text-accent hover:text-accent/80 transition-smooth cursor-default">innovative solutions</span> that 
-              merge cutting-edge technology with practical applications. From machine learning models 
-              for healthcare to smart surveillance systems, I love tackling challenges that make a real impact.
+              My experience includes developing ERP and business applications for real-world workflows such as harvesting and transportation, e-auctions, invoicing, inventory and payments. I enjoy transforming complex business requirements into clean, intuitive interfaces that are easy to use and maintain.
             </p>
 
             <p className="text-lg text-foreground/90 leading-relaxed hover:scale-[1.02] transition-smooth text-center">
-              As a <span className="font-semibold text-primary hover:text-primary/80 transition-smooth cursor-default">self-learner and team player</span>, I'm constantly 
-              exploring new technologies and methodologies. I also serve as an advisor in the Documentation Team 
-              at Team ACSES, sharing knowledge and supporting collaborative projects.
+              I focus on building reusable UI components, responsive layouts, REST API integrations, form workflows, validation, and meaningful loading, success, and error states. I also work closely with designers and stakeholders to improve usability and deliver practical solutions.
             </p>
           </div>
 

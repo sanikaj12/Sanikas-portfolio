@@ -23,7 +23,7 @@ export const Contact = () => {
         </div>
 
         {/* Two Column Layout */}
-        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-1 gap-8 max-w-6xl mx-auto">
           {/* Left Card - Let's Connect */}
           <Card className="p-8 shadow-soft hover:shadow-large transition-smooth border-2 hover:border-primary/30 animate-bounce-in">
             <h3 className="text-2xl font-bold mb-6 text-foreground">Let's Connect</h3>
@@ -99,12 +99,12 @@ export const Contact = () => {
           </Card>
 
           {/* Right Card - Send Me a Message */}
-          <Card className="p-8 shadow-soft hover:shadow-large transition-smooth border-2 hover:border-primary/30 animate-bounce-in" style={{ animationDelay: '200ms' }}>
+          {/* <Card className="p-8 shadow-soft hover:shadow-large transition-smooth border-2 hover:border-primary/30 animate-bounce-in" style={{ animationDelay: '200ms' }}>
             <h3 className="text-2xl font-bold mb-6 text-foreground">Send Me a Message</h3>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6"> */}
               {/* Name and Email Row */}
-              <div>
+              {/* <div>
                 <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                   Name
                 </label>
@@ -143,7 +143,6 @@ export const Contact = () => {
                 />
               </div>
 
-              {/* Subject */}
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
                   Subject
@@ -157,7 +156,6 @@ export const Contact = () => {
                 />
               </div>
 
-              {/* Message */}
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
                   Message
@@ -168,10 +166,10 @@ export const Contact = () => {
                   className="w-full min-h-[120px] resize-y"
                   required
                 />
-              </div>
+              </div> */}
 
               {/* Submit Button */}
-              <Button
+              {/* <Button
                 type="submit"
                 size="lg"
                 className="w-full bg-primary to-accent hover:from-primary/90 hover:to-accent/90 shadow-medium hover:shadow-large transition-smooth hover:scale-[1.02] group"
@@ -180,7 +178,7 @@ export const Contact = () => {
                 <Send className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-smooth" />
               </Button>
             </form>
-          </Card>
+          </Card> */}
         </div>
       </div>
     </section>
